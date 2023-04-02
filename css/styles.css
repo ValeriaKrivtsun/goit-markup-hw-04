@@ -321,7 +321,6 @@ body {
 
 .feature-item {
     width: calc((100% - 72px) / 4);
-    margin-right: 24px;
 }
 
 .feature-item:last-child {
