@@ -60,7 +60,6 @@ body {
     text-decoration: none;
 }
 
-
 .container {
     width: 1158px;
     padding-left: 15px;
@@ -76,6 +75,7 @@ body {
 .header {
     padding: 24px 0px;
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -83,8 +83,6 @@ body {
     align-items: center;
 }
 
-
-/* !!!! */
 .header-logo {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -94,7 +92,6 @@ body {
     letter-spacing: 0.02em;
     color: #2E2F42;
 }
-
 
 .header-logo-portfolio {
     font-family: 'Raleway',
@@ -167,13 +164,11 @@ body {
     color: #404bbf;
 }
 
-
 .header-contact {
     font-style: normal;
     list-style: none;
 }
     
-
 .header-list {
     list-style: none;
     display: flex;
@@ -184,7 +179,6 @@ body {
     align-items: center;
     margin-right: auto;
 }
-
 
 .header-item {
     font-weight: 500;
@@ -215,6 +209,8 @@ body {
     background-size: cover;
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .visually-hidden {
@@ -246,7 +242,6 @@ body {
 }
 
 .hero-button {
-    min-width: 169px;
     height: 56px;
     background: #4D5AE5;
     color: #FFFFFF;
@@ -263,6 +258,7 @@ body {
     border-radius: 4px;
     margin: auto;
     padding: 16px 32px;
+    border: none;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -428,6 +424,11 @@ body {
     justify-content: center;
 }
 
+.team-soc-link:hover,
+.team-soc-link:focus {
+    background: #404BBF;
+}
+
 .team-list {
     display: flex;
     gap: 24px;
@@ -582,15 +583,6 @@ body {
     list-style: none;
 }
 
-.gallery-item:hover,
-.gallery-item:focus {
-    background: #FFFFFF;
-    border: 1px solid #F4F4FD;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
 .gallery-item-text {
     color: #434455;
     font-family: 'Roboto',
@@ -614,8 +606,14 @@ body {
     margin-bottom: 8px;
 }
 
-.link {
+.gallery-link {
+    display: block;
+}
+
+.gallery-link:hover,
+.gallery-link:focus {
     text-decoration: none;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 
@@ -688,7 +686,6 @@ body {
     letter-spacing: 0.02em;
     color: #FFFFFF;
     display: flex;
-    justify-content: center;
     margin-bottom: 16px;
 }
 
@@ -711,4 +708,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    background: #31D0AA;
 }
